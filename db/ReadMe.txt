@@ -1,0 +1,1 @@
+Diretório para armazenamento de objetos relacionados a banco de dados
