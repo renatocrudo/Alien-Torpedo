@@ -11,14 +11,14 @@ declare @local		varchar(8000)
 
 -- PARA EXECUTAR ALTERAR OS CAMPOS ABAIXO - INI
 
-Set @servername = '.\SQL2008';
+Set @servername = '';
 /*	Instruções:
 Para pasta local, adicione o caminho até a pasta Alien-Torpedo. Ex.:
 	Set C:\Users\Renato\Documents\Projetos\Alien-Torpedo
 	
 	NÃO ADICIONE A \ NO FINAL
 */
-Set @local = 'C:\Users\Renato\Documents\Projetos\Alien-Torpedo'; -- ex: 'C:\Users\Renato\Documents\Projetos\Alien-Torpedo'
+Set @local = ''; -- ex: 'C:\Users\Renato\Documents\Projetos\Alien-Torpedo'
 
 -- PARA EXECUTAR ALTERAR OS CAMPOS ABAIXO - FIM
 
@@ -54,7 +54,7 @@ if(@Nm_scripts != '')
 
 				-- declare variaveis
 
-				declare @database varchar(80) = 'controle_compras';
+				declare @database varchar(80) = 'master';
 				declare @Nm_file varchar(80);
 
 				Set @local += '\db\';
