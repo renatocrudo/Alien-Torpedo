@@ -28,7 +28,7 @@ namespace AlienTorpedoAPI.Controllers
             {
                 return BadRequest(ModelState);
             }
-
+            
             user.NmSenha = CriptografaSenha(user.NmSenha);
 
             _dbcontext.Add(user);
